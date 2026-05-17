@@ -1,3 +1,4 @@
+import Link from 'next/link';
 import UserForm from './Components/UserForm';
 import SecretTest from './Components/SecretTest';
 import HelloCard from './Components/HelloCard';
@@ -10,6 +11,9 @@ export default function Home() {
         <UserForm />
         <HelloCard />
         {/* <SecretTest /> */}
+        <div className="pt-2">
+          <Link href="/mbti" className="inline-block rounded bg-indigo-600 px-4 py-2 text-white">Learn about MBTI</Link>
+        </div>
       </div>
     </main>
   );
